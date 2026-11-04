@@ -1,0 +1,6 @@
+{
+  "name": "Interior Boxx",
+  "description": "Premium showroom in Hyderabad for interior hardware, plywood, natural veneers, decorative panels, kitchen fittings, and architectural laminates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

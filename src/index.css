@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Luxury Architectural Palette */
+  --color-matte-black: #171513;
+  --color-black-surface: #1E1B18;
+  --color-black-elevated: #262320;
+  --color-walnut: #493426;
+  --color-walnut-deep: #38271C;
+  --color-walnut-light: #614633;
+  --color-gold: #C5A16B;
+  --color-gold-light: #E0C496;
+  --color-gold-muted: #8E744D;
+  --color-ivory: #F4EFE6;
+  --color-ivory-surface: #ECE5D8;
+  --color-ivory-sand: #DFD7C7;
+  --color-border-dark: rgba(197, 161, 107, 0.18);
+  --color-border-light: rgba(73, 52, 38, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #171513;
+  color: #F4EFE6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle gold shimmer line */
+.gold-divider {
+  background: linear-gradient(90deg, transparent 0%, #C5A16B 50%, transparent 100%);
+}
+
+/* Custom scrollbar for chatbot */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1E1B18;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #493426;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #C5A16B;
+}
